@@ -3,11 +3,12 @@ import { Route, Routes } from 'react-router-dom';
 import AllMovies from './page/AllMovies';
 import SingleMovie from './page/SingleMovie';
 import Modal from 'react-modal';
+import './App.css'
 
 Modal.setAppElement('#root');
 const App = () => {
   return (
-    <div>
+    <div className='temp'>
 
       <Routes>
         <Route exact path="/" element={<AllMovies />} />
